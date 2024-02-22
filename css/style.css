@@ -1,15 +1,15 @@
 /* reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  ul {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
 
 /* general */
 html {
@@ -18,16 +18,16 @@ html {
 body {
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
-  max-width: 768px;
+  width: 100%;
 }
 :root {
-	--color-header: #0084fd;
-	--color-odd-bg: #ffffff;
-	--color-even-bg: #9792e4;
-	--color-contrast: #b5ddff;
-  --color-text-contrast: #5A6E7F;
-	--color-footer-bg: #333333;
-	--color-color-h1: #fdc15f;
+  --color-header: #0084fd;
+  --color-odd-bg: #ffffff;
+  --color-even-bg: #9792e4;
+  --color-contrast: #b5ddff;
+  --color-text-contrast: #5a6e7f;
+  --color-footer-bg: #333333;
+  --color-color-h1: #fdc15f;
   --color-black: #000000;
 }
 img {
@@ -37,7 +37,7 @@ img {
 .container {
   padding: 50px 30px;
 }
-h1{
+h1 {
   color: var(--color-color-h1);
   font-size: 4em;
   margin: 40px 0;
@@ -45,7 +45,8 @@ h1{
 h2 {
   font-size: 2em;
 }
-h3, .icon {
+h3,
+.icon {
   color: var(--color-header);
   font-size: 1.5em;
   margin-bottom: 30px;
@@ -62,7 +63,7 @@ p {
   padding: 10px 50px;
   margin: 30px 0;
   border-radius: 20px;
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
 /* header */
@@ -75,7 +76,7 @@ header {
   left: 0;
   z-index: 2;
 }
-header .container {  
+header .container {
   height: 75px;
   padding: 0 30px;
 }
@@ -139,7 +140,7 @@ section .right {
 .circle {
   margin: 0 auto;
   width: 50px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
 }
 .circle a {
   padding: 15px;
@@ -148,7 +149,7 @@ section .right {
 .circle-portrait {
   margin: 0 auto;
   width: 200px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   overflow: hidden;
 }
 .circle-portrait img {
@@ -156,14 +157,14 @@ section .right {
   height: 100%;
   object-fit: cover;
 }
-#testimonials .container>div {
+#testimonials .container > div {
   padding: 30px 20px;
 }
-#features .big-wrap>div {
+#features .big-wrap > div {
   padding: 30px;
-
 }
-#features .big-wrap h2, #about-us h2 {
+#features .big-wrap h2,
+#about-us h2 {
   font-size: 3em;
 }
 #features p {
@@ -180,7 +181,7 @@ section .right {
 }
 #about-us .quote {
   width: 200px;
-  aspect-ratio: 1;
+  aspect-ratio: 1 / 1;
   position: relative;
 }
 #about-us .fa-quote-left {
@@ -189,7 +190,7 @@ section .right {
   right: 0;
   font-size: 4em;
 }
-#about-us h3{
+#about-us h3 {
   margin: 30px 0 0 0;
   font-size: 2em;
 }
