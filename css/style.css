@@ -18,7 +18,7 @@ html {
 body {
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
-  max-width: 375px;
+  max-width: 768px;
 }
 :root {
 	--color-header: #0084fd;
@@ -127,6 +127,7 @@ main .card {
   padding: 30px;
 }
 .card .img-content img {
+  max-width: 250px;
   margin-bottom: -30px;
 }
 .icon {
@@ -177,13 +178,15 @@ section .right {
 #about-us .circle-portrait {
   margin: 0;
 }
-#about-us .container>div:last-child {
+#about-us .quote {
+  width: 200px;
+  aspect-ratio: 1;
   position: relative;
 }
 #about-us .fa-quote-left {
   position: absolute;
   top: 0;
-  left: 50%;
+  right: 0;
   font-size: 4em;
 }
 #about-us h3{
