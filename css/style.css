@@ -107,7 +107,6 @@ nav ul a {
 nav ul a:hover {
   background-color: var(--color-contrast);
   color: var(--color-footer-bg);
-  transition: 0.7s;
 }
 nav:hover ul {
   display: block;

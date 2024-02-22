@@ -1,93 +1,188 @@
 @media screen and (min-width: 768px) {
-   section:first-child .container {
+  section:first-child .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px;
     row-gap: 22px;
-   } 
-   .card {
+  }
+  .card {
     width: calc(100% / 3 - 15px);
     margin-bottom: 0;
-   }
-   .card:first-child {
+  }
+  .card:first-child {
     width: calc(100% / 3 * 2 - 7.5px);
-   }
-   #planning h2 {
+  }
+  #planning h2 {
     font-size: 4em;
-   }
-   #testimonials h2 {
+  }
+  #testimonials h2 {
     font-size: 2.5em;
-   }
-   #testimonials .container>div {
+  }
+  #testimonials .container > div {
     display: flex;
-   }
-   #testimonials .circle-portrait {
+  }
+  #testimonials .circle-portrait {
     height: 200px;
-   }   
-   #testimonials .text-portrait {
+  }
+  #testimonials .text-portrait {
     text-align: left;
     width: calc(100% - 250px);
-   }
-   #testimonials .text-portrait p {
+  }
+  #testimonials .text-portrait p {
     margin: 15px 0;
-   }
-   #features h2 {
+  }
+  #features h2 {
     font-size: 2.5em;
     margin-bottom: 70px;
-   }
-   #features .big-wrap {
+  }
+  #features .big-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 15px;
     row-gap: 30px;
-   }
-   #features .big-wrap>div {
+  }
+  #features .big-wrap > div {
     margin: 0;
-    width: calc(100% / 2 - 15px);    
-   }
-   #features .big-wrap>div h2 {
+    width: calc(100% / 2 - 15px);
+  }
+  #features .big-wrap > div h2 {
     margin-bottom: 20px;
     font-size: 5em;
-   }
-   #about-us .container {
+  }
+  #about-us .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-   }
-   #about-us .container>div:first-child {
+  }
+  #about-us .container > div:first-child {
     width: 55%;
-   }
-   #about-us .container>div:last-child {
+  }
+  #about-us .container > div:last-child {
     width: 35%;
-   }
-   .quote {
+  }
+  .quote {
     margin: 0 auto;
-   }
-   #about-us h2 {
+  }
+  #about-us h2 {
     font-size: 4em;
-   }
-   #call-to-action h2 {
+  }
+  #call-to-action h2 {
     font-size: 3em;
-   }
-   #call-to-action h1 {
+  }
+  #call-to-action h1 {
     font-size: 6em;
-   }
-   #call-to-action .button {
-     padding: 30px 80px;
-     font-size: 1.2em;
-   }
-   #call-to-action p,
-   footer p {
+  }
+  #call-to-action .button {
+    padding: 30px 80px;
+    font-size: 1.2em;
+  }
+  #call-to-action p,
+  footer p {
     margin: auto;
     max-width: 450px;
-   }
-   footer p {
+  }
+  footer p {
     margin-bottom: 50px;
-   }
+  }
 }
 
 @media screen and (min-width: 992px) {
-
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .fa-bars {
+    display: none;
+  }
+  nav {
+    cursor: auto;
+  }
+  nav ul {
+    position: static;
+    display: flex;
+    padding: 0;
+  }
+  nav:hover ul {
+    display: flex;
+  }
+  nav ul li:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul a {
+    border-radius: 15px;
+    display: block;
+    color: var(--color-odd-bg);
+    font-weight: bold;
+    padding: 5px 15px;
+  }
+  nav ul li:last-child a{
+    border-radius: 15px;
+    display: block;
+    background-color: var(--color-odd-bg);
+    color: var(--color-black);
+    font-weight: bold;
+    padding: 5px 15px;
+  }
+  .card:first-child {
+    display: flex;
+    justify-content: space-between;
+  }
+  .text-content,
+  .img-content {
+    width: 50%;
+  }
+  .img-content img {
+    margin: 0 auto;
+    margin-top: 80px;
+  }
+  #planning .container {
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  #planning .right,
+  #planning .left {
+    width: calc(100% / 2 - 30px);
+  }
+  #planning .right {
+    padding: 30px;
+  }
+  #planning .right img {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #planning h2 {
+    margin: 120px 0 50px 0;
+    font-size: 2em;
+  }
+  #features .big-wrap > div {
+    margin: 0;
+    width: calc(100% / 3 - 20px);
+  }
+  #about-us .container {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  #about-us .container > div:first-child {
+    width: 65%;
+  }
+  #about-us .container > div:last-child {
+    width: 25%;
+  }
+  #about-us .circle-portrait,
+  #about-us .quote {
+    width: 250px;
+  }
+  #about-us .fa-quote-left {
+    font-size: 5em;
+  }
+  #about-us p {
+    color: var(--color-footer-bg);
+    font-size: 1.4em;
+  }
 }
