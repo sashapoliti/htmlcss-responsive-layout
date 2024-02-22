@@ -12,6 +12,9 @@
   }
 
 /* general */
+html {
+  scroll-behavior: smooth;
+}
 body {
   margin: 0 auto;
   font-family: "PT Sans", sans-serif;
@@ -50,6 +53,7 @@ p {
   display: inline-block;
   background-color: var(--color-header);
   color: var(--color-odd-bg);
+  font-weight: bold;
   padding: 10px 50px;
   margin: 30px 0;
   border-radius: 20px;
@@ -88,7 +92,7 @@ nav ul {
   z-index: 1;
 }
 nav ul a {
-  border-radius: 10px;
+  border-radius: 15px;
   display: block;
   color: var(--color-odd-bg);
   font-weight: bold;
@@ -146,9 +150,21 @@ section .right {
   height: 100%;
   object-fit: cover;
 }
-
 #testimonials .container>div {
   padding: 30px 20px;
+}
+#features .big-wrap>div {
+  padding: 30px;
+
+}
+#features .big-wrap h2 {
+  font-size: 3em;
+}
+#features p {
+  color: var(--color-text-contrast);
+}
+#features .button {
+  margin-bottom: 0;
 }
 
 /* footer */
