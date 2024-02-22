@@ -33,15 +33,17 @@ img {
 .container {
   padding: 50px 30px;
 }
-h2, .icon {
+h3, .icon {
   color: var(--color-header);
+  font-size: 1.5em;
   margin-bottom: 30px;
 }
 p {
   line-height: 1.7em;
-  /* margin-top: -5px; */
+  margin-top: -5px;
 }
 .button {
+  display: inline-block;
   background-color: var(--color-header);
   color: var(--color-odd-bg);
   padding: 10px 50px;
@@ -52,15 +54,58 @@ p {
 
 /* header */
 header {
+  width: 100%;
   background-color: var(--color-header);
+  color: var(--color-odd-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+header .container {  
+  height: 75px;
+  padding: 0 30px;
+}
+#logo img {
+  width: auto;
 }
 nav {
-  height: 75px;
+  position: relative;
+  cursor: pointer;
+  padding: 15px 0 15px 35px;
+}
+nav ul {
+  display: none;
+  background-color: var(--color-header);
+  padding: 30px;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  z-index: 1;
+}
+nav ul a {
+  border-radius: 10px;
+  display: block;
+  color: var(--color-odd-bg);
+  font-weight: bold;
+  padding: 15px;
+}
+nav ul a:hover {
+  background-color: var(--color-contrast);
+  color: var(--color-footer-bg);
+  transition: 0.7s;
+}
+nav:hover ul {
+  display: block;
 }
 
 /* main */
 main {
   background-color: var(--color-odd-bg);
+  margin-top: 75px;
+}
+section {
+  margin: 30px 0;
 }
 main .card {
   background-color: var(--color-contrast);
@@ -69,7 +114,7 @@ main .card {
   padding: 30px 30px;
 }
 .card .img-content img {
-  /* margin-bottom: -35px; */
+  margin-bottom: -30px;
 }
 .icon {
   font-size: 5em;
@@ -105,4 +150,15 @@ footer {
 /* color utility */
 .bgc-even {
   background-color: var(--color-even-bg);
+}
+
+/* flex utility */
+.d-flex {
+  display: flex;
+}
+.s-between {
+  justify-content: space-between;
+}
+.ai-center {
+  align-items: center;
 }
