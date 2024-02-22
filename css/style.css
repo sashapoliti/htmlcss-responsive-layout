@@ -37,6 +37,11 @@ img {
 .container {
   padding: 50px 30px;
 }
+h1{
+  color: var(--color-color-h1);
+  font-size: 4em;
+  margin: 40px 0;
+}
 h2 {
   font-size: 2em;
 }
@@ -193,13 +198,35 @@ section .right {
   border-radius: 20px;
   letter-spacing: 0;
 }
+#call-to-action .button {
+  background-color: var(--color-odd-bg);
+  color: var(--color-even-bg);
+  padding: 20px 80px;
+  border-radius: 100px;
+}
+.copyright {
+  padding: 0 10px;
+  font-size: small;
+}
+.copyright a {
+  color: var(--color-odd-bg);
+  text-decoration: underline;
+}
 
 /* footer */
 footer {
   background-color: var(--color-footer-bg);
   color: var(--color-odd-bg);
+  font-size: 0.9em;
 }
-
+footer p {
+  line-height: normal;
+  margin-bottom: 50px;
+}
+footer a {
+  color: var(--color-even-bg);
+  text-decoration: underline;
+}
 /* utility */
 .radius-small {
   border-radius: 20px;
