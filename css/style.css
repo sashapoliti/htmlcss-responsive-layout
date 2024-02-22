@@ -157,7 +157,7 @@ section .right {
   padding: 30px;
 
 }
-#features .big-wrap h2 {
+#features .big-wrap h2, #about-us h2 {
   font-size: 3em;
 }
 #features p {
@@ -165,6 +165,33 @@ section .right {
 }
 #features .button {
   margin-bottom: 0;
+}
+#about-us p {
+  font-size: 1.2em;
+}
+#about-us .circle-portrait {
+  margin: 0;
+}
+#about-us .container>div:last-child {
+  position: relative;
+}
+#about-us .fa-quote-left {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 4em;
+}
+#about-us h3{
+  margin: 30px 0 0 0;
+  font-size: 2em;
+}
+#about-us .button {
+  background-color: var(--color-even-bg);
+  font-weight: normal;
+  padding: 10px 20px;
+  margin: 30px 0;
+  border-radius: 20px;
+  letter-spacing: 0;
 }
 
 /* footer */
