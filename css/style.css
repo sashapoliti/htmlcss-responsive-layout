@@ -33,7 +33,7 @@ img {
 .container {
   padding: 50px 30px;
 }
-h2 {
+h2, .icon {
   color: var(--color-header);
   margin-bottom: 30px;
 }
@@ -70,6 +70,9 @@ main .card {
 }
 .card .img-content img {
   /* margin-bottom: -35px; */
+}
+.icon {
+  font-size: 5em;
 }
 
 /* footer */
