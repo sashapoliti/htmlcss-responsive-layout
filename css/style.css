@@ -25,6 +25,7 @@ body {
   --color-text-contrast: #5A6E7F;
 	--color-footer-bg: #333333;
 	--color-color-h1: #fdc15f;
+  --color-black: #000000;
 }
 img {
   display: block;
@@ -32,6 +33,9 @@ img {
 }
 .container {
   padding: 50px 30px;
+}
+h2 {
+  font-size: 2em;
 }
 h3, .icon {
   color: var(--color-header);
@@ -105,7 +109,7 @@ main {
   margin-top: 75px;
 }
 section {
-  margin: 30px 0;
+  padding: 30px 0;
 }
 main .card {
   background-color: var(--color-contrast);
@@ -118,6 +122,18 @@ main .card {
 }
 .icon {
   font-size: 5em;
+}
+section .right {
+  padding: 35px 20px;
+}
+.circle {
+  margin: 0 auto;
+  width: 50px;
+  aspect-ratio: 1;
+}
+.circle a {
+  padding: 15px;
+  color: var(--color-black);
 }
 
 /* footer */
@@ -141,15 +157,30 @@ footer {
 .text-center {
   text-align: center;
 }
+.tc-white {
+  color: var(--color-odd-bg);
+}
+.tc-black {
+  color: var(--color-black);
+}
 
 /* margin utility */
+.mt-30 {
+  margin-top: 30px;
+}
 .mb-30 {
   margin-bottom: 30px;
+}
+.mtb-70-50 {
+  margin: 70px 0 50px 0;
 }
 
 /* color utility */
 .bgc-even {
   background-color: var(--color-even-bg);
+}
+.bgc-odd {
+  background-color: var(--color-odd-bg);
 }
 
 /* flex utility */
@@ -158,6 +189,9 @@ footer {
 }
 .s-between {
   justify-content: space-between;
+}
+.j-center {
+  justify-content: center;
 }
 .ai-center {
   align-items: center;
